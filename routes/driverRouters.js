@@ -7,6 +7,6 @@ const {
 } = require("../controllers/driverController");
 
 router.get("/bookings", authMiddleware, getDriverBookings);
-router.get("/location", authMiddleware, updateLocation);
+router.post("/location", authMiddleware, updateLocation);
 
 module.exports = router;
